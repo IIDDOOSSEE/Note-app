@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    "dynamic.apps.DynamicConfig",
     "note.apps.NoteConfig",
     'django.contrib.admin',
     'django.contrib.auth',

@@ -29,3 +29,4 @@ def add_note(request):
             return redirect('index')  
 
     return render(request, 'note/add_note.html')
+    
