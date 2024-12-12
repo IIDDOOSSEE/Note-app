@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Note</title>
+</head>
+<body>
+    <h1>Add a New Note</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="title_text">Title:</label>
+        <input type="text" id="title_text" name="title_text" required>
+        <br><br>
+        <label for="content_text">Content:</label>
+        <textarea id="content_text" name="content_text" required></textarea>
+        <br><br>
+        <label for="pub_date">Publish Date:</label>
+        <input type="datetime-local" id="pub_date" name="pub_date" required>
+        <br><br>
+        <button type="submit">Save Note</button>
+    </form>
+    <p><a href="/">return to index</a></p>
+</body>
+</html>
